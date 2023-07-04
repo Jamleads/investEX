@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Golden rule section</title>
+
+    <style>
+      .golden-rules {
+        background-color: #182837;
+        padding: 1px;
+        color: #ffffff;
+      }
+      .golden-rules-head {
+        padding: 0 40px;
+        margin-top: 40px;
+      }
+      .golden-rules-head p {
+        width: 75%;
+        font-weight: 100;
+      }
+      .golden-rules-row {
+        margin-top: 5rem;
+      }
+      .golden-rules-col1-wrapper,
+      .golden-rules-col3-wrapper {
+        display: grid;
+        gap: 30px;
+      }
+      .golden-rules-col1-card,
+      .golden-rules-col3-card {
+        width: 85%;
+        height: 115px;
+        background-color: #1e3347;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .golden-rules-col1-card:hover,
+      .golden-rules-col3-card:hover {
+        background-color: #aed6f8;
+        transition: ease-in-out 0.2s;
+        color: #000;
+      }
+      .golden-rules-col1-card {
+        margin-left: auto;
+      }
+      .golden-rules-col3-card {
+        margin-right: auto;
+      }
+      .golden-rules-col1-card-number,
+      .golden-rules-col3-card-number {
+        font-weight: 800;
+        font-size: 20px;
+      }
+      .golden-rules-col1-card-text,
+      .golden-rules-col3-card-text {
+        font-weight: 100;
+        margin-left: 20px;
+      }
+
+      .golden-rules-col2-wrapper {
+        width: 85%;
+        margin: auto;
+        background-color: #aed6f8;
+      }
+      .golden-rules-video-title {
+        padding: 10px;
+        font-weight: 800;
+        font-size: 20px;
+        color: #000;
+      }
+      .golden-rules-video-title span {
+        font-weight: 100;
+        font-size: 16px;
+      }
+
+      @media (max-width: 488px) {
+        .golden-rules-head {
+          padding: 0 5px;
+        }
+        .golden-rules-head p {
+          width: 100%;
+        }
+        .golden-rules-col1 {
+          width: 90%;
+          padding: 0px 5px;
+        }
+        .golden-rules-col3 {
+          width: 90%;
+          padding: 5px;
+          margin-top: 20px;
+          margin-left: 50px !important;
+        }
+        .golden-rules-row {
+          display: flex;
+          flex-direction: column;
+        }
+        .golden-rules-row div:nth-child(2) {
+          order: 3;
+        }
+        .golden-rules-row div:nth-child(3) {
+          order: 2;
+        }
+        .golden-rules-col2 {
+          width: 100%;
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="golden-rules">
+      <div class="container">
+        <div class="golden-rules-head">
+          <h2>Ten golden rules</h2>
+          <p class="mt-5">
+            We are highly selective. Our investible universe contains 50-70
+            global businesses which we believe demonstrate the pure quality
+            growth characteristics we seek.
+          </p>
+          <p>
+            Without exception we follow ten golden rules to determine which
+            companies share these traits.
+          </p>
+        </div>
+
+        <div class="row golden-rules-row">
+          <div class="golden-rules-col1 col-3">
+            <div class="golden-rules-col1-wrapper">
+              <div class="golden-rules-col1-card">
+                <p class="golden-rules-col1-card-number">01</p>
+                <p class="golden-rules-col1-card-text">
+                  Superior industry growth
+                </p>
+              </div>
+              <div class="golden-rules-col1-card">
+                <p class="golden-rules-col1-card-number">02</p>
+                <p class="golden-rules-col1-card-text">
+                  Consistent industry leadership
+                </p>
+              </div>
+              <div class="golden-rules-col1-card">
+                <p class="golden-rules-col1-card-number">03</p>
+                <p class="golden-rules-col1-card-text">
+                  Scalable business model
+                </p>
+              </div>
+              <div class="golden-rules-col1-card">
+                <p class="golden-rules-col1-card-number">04</p>
+                <p class="golden-rules-col1-card-text">
+                  Sustainable competitive advantage
+                </p>
+              </div>
+              <div class="golden-rules-col1-card">
+                <p class="golden-rules-col1-card-number">05</p>
+                <p class="golden-rules-col1-card-text">Strong organic growth</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="golden-rules-col2 col-6">
+            <div class="golden-rules-col2-wrapper">
+              <video width="100%" height="640px" controls>
+                <source src="movie.mp4" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+              </video>
+              <p class="golden-rules-video-title">
+                Watch:
+                <span class="video span">01 Superior industry growth</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="golden-rules-col3 col-3">
+            <div class="golden-rules-col3-wrapper">
+              <div class="golden-rules-col3-card">
+                <p class="golden-rules-col3-card-number">06</p>
+                <p class="golden-rules-col3-card-text">
+                  Wide geographic & customer diversification
+                </p>
+              </div>
+              <div class="golden-rules-col3-card">
+                <p class="golden-rules-col3-card-number">07</p>
+                <p class="golden-rules-col3-card-text">
+                  Low capital intensity & high return on invested capital
+                </p>
+              </div>
+              <div class="golden-rules-col3-card">
+                <p class="golden-rules-col3-card-number">08</p>
+                <p class="golden-rules-col3-card-text">
+                  Solid financial position
+                </p>
+              </div>
+              <div class="golden-rules-col3-card">
+                <p class="golden-rules-col3-card-number">09</p>
+                <p class="golden-rules-col3-card-text">Transparent accounts</p>
+              </div>
+              <div class="golden-rules-col3-card">
+                <p class="golden-rules-col3-card-number">10</p>
+                <p class="golden-rules-col3-card-text">
+                  Excellent management & governance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"
+  ></script>
+</html>

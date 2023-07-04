@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .hide {
+    display: none;
+  }
+}
+.cont {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 0.5s;
+}
+.cont.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.box1 {
+  position: relative;
+}
+.box1 div {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+}
+.cta {
+  position: relative;
+}
+.cta .img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 400px) {
+  .invest-img2 {
+    margin-top: 30px;
+  }
+  .counters {
+    margin-top: 40rem;
+  }
+  .cta .img1 {
+    display: none;
+  }
+}

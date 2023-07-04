@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get new ways to better invest" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pryColor1: '#10375C',
+              pryColor2: '#2E5579',
+              pryColor3: '#738DA5',
+              acctColor1: '#2E80CE',
+              acctColor2: '#9FC5EA',
+              textHeading: '000F1D',
+              textbody: '#121B24',
+              white: '#ffffff',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <script src="script.js" defer></script>
+    <title>InvestEX || Home</title>
+  </head>
+
+  <body>
+    <section class="header bg-pryColor1 h-screen">
+      <div class="lg:px-20 px-5">
+        <div class="nav text-white flex items-center justify-between py-5">
+          <div class="nav-brand flex items-center">
+            <img src="./asset/Logo.svg" alt="logo" class="brand-logo" />
+            <p class="brand-name lg:text-2xl ml-3">InvestEX</p>
+          </div>
+
+          <div class="nav-links hide">
+            <ul class="flex items-center gap-20">
+              <li class="text-lg"><a href="#">Home</a></li>
+              <li class="text-lg"><a href="#">About</a></li>
+              <li class="text-lg"><a href="#">Why Us</a></li>
+              <li class="text-lg"><a href="#">Project</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="showcase-text lg:flex justify-between lg:mt-36 mt-10">
+          <div class="lg:w-1/2">
+            <p class="font-light text-lg text-acctColor2">
+              INTRODUCING INVESTEX
+            </p>
+            <p class="showcase-heading text-6xl font-bold text-white">
+              We Create new ways to better invest
+            </p>
+          </div>
+
+          <div class="lg:w-1/2 lg:mt-0 mt-5">
+            <div class="lg:w-2/5 lg:ml-60">
+              <p class="text-acctColor2">
+                Make Investment twice as portfolio. Double your deposit!
+              </p>
+
+              <button class="text-xs text-white px-14 py-3 mt-5 bg-acctColor1">
+                Create Account
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="showcase-img lg:flex items-center justify-around lg:mt-32 mt-5"
+        >
+          <img
+            src="./asset/unsplash_UpsEF48wAgk.svg"
+            alt=""
+            class="invest-img1"
+          />
+          <img
+            src="./asset/unsplash_TXxiFuQLBKQ.svg"
+            alt=""
+            class="invest-img2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="counters lg:mt-80">
+      <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-0 gap-y-10 py-10">
+        <div class="years flex flex-col gap-2 items-center">
+          <p class="text-5xl">
+            <span class="count-figure" data-target="10">0</span>+
+          </p>
+          <p>Years Investment</p>
+        </div>
+        <div class="years flex flex-col gap-2 items-center">
+          <p class="text-5xl">
+            <span class="count-figure" data-target="2.5">0</span>M
+          </p>
+          <p>Yearly Revenue</p>
+        </div>
+        <div class="years flex flex-col gap-2 items-center">
+          <p class="text-5xl">
+            <span class="count-figure" data-target="100">0</span>+
+          </p>
+          <p>Active Country</p>
+        </div>
+        <div class="years flex flex-col gap-2 items-center">
+          <p class="text-5xl">
+            <span class="count-figure" data-target="2.5">0</span>X
+          </p>
+          <p>Growth Rate</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="target-sec lg:px-20 lg:my-20">
+      <div class="lg:flex items-center lg:px-0 px-5">
+        <div class="lg:w-1/3">
+          <p class="lg:text-6xl text-5xl font-light">How does Investex work</p>
+        </div>
+        <div
+          class="lg:w-2/3 lg:flex justify-between items-center lg:mt-0 mt-10"
+        >
+          <div class="lg:w-2/3">
+            <p class="lg:px-8">
+              Investex has been providing the highest quality services for more
+              than 8 years. There are 16 million investors who trust us in more
+              than 150 countries.
+            </p>
+          </div>
+          <div class="lg:w-1/3 lg:mt-0 mt-5">
+            <div class="flex items-center lg:ml-10">
+              <img src="./asset/left.svg" alt="" />
+              <img src="./asset/right.svg" alt="" class="ml-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-3 mt-16 lg:px-0 px-5">
+        <div class="flex flex-col justify-center items-center">
+          <div class="box1">
+            <img src="./asset/Small Box.svg" alt="" />
+            <div
+              class="w-12 h-12 bg-acctColor1 flex items-center justify-center text-white text-lg"
+            >
+              01
+            </div>
+          </div>
+          <p class="p-5 text-lg">Create Your Account</p>
+        </div>
+
+        <div class="cont flex flex-col justify-center items-center">
+          <div class="box1">
+            <img src="./asset/Small Box2.svg" alt="" />
+            <div
+              class="w-12 h-12 bg-acctColor1 flex items-center justify-center text-white text-lg"
+            >
+              02
+            </div>
+          </div>
+          <p class="p-5 text-lg">First Time Deposit</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <div class="box1">
+            <img src="./asset/Small Box3.svg" alt="" />
+            <div
+              class="w-12 h-12 bg-acctColor1 flex items-center justify-center text-white text-lg"
+            >
+              03
+            </div>
+          </div>
+          <p class="p-5 text-lg">Withdraw Your Profit</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="target-sec lg:px-20 my-20 bg-pryColor1 lg:flex">
+      <div class="lg:w-1/2 py-24 lg:px-5 px-3 text-white">
+        <p class="lg:text-5xl text-3xl lg:w-3/4">
+          Why You Must Choose Investex
+        </p>
+
+        <div class="mt-10 grid grid-cols-2 gap-y-10">
+          <div class="flex items-center">
+            <img src="./asset/carbon_analytics.svg" alt="" />
+            <div class="ml-5">
+              <p class="text-2xl">120+</p>
+              <p class="text-xs font-light">Stable Traffic</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./asset/majesticons_analytics-line.svg" alt="" />
+            <div class="ml-5">
+              <p class="text-2xl">+7K</p>
+              <p class="text-xs font-light">Stable Traffic</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./asset/ph_users-three-light.svg" alt="" />
+            <div class="ml-5">
+              <p class="text-2xl">10K</p>
+              <p class="text-xs font-light">Active Users</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./asset/calendar.svg" alt="" />
+            <div class="ml-5">
+              <p class="text-2xl">24/7</p>
+              <p class="text-xs font-light">Scheduled Activities</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./asset/secure.svg" alt="" />
+            <div class="ml-5">
+              <p class="text-2xl">2FA</p>
+              <p class="text-xs font-light">Fast Secure</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./asset/connection.svg" alt="" />
+            <div class="ml-5">
+              <p class="text-2xl">500+</p>
+              <p class="text-xs font-light">Platform Connected</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 px-10">
+        <div
+          class="cont bg-white h-4/5 lg:w-4/6 py-32 lg:mx-auto flex flex-col justify-center items-center"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <img src="./asset/unsplash_h5cd51KXmRQ.png" alt="" />
+            <p class="text-xs text-acctColor2">Sajid Ali Solangi</p>
+          </div>
+
+          <div class="px-8 text-center">
+            <p class="text-3xl my-5">Keep Nerve Lose Your Money</p>
+            <p class="mb-5 text-sm font-light">
+              It’s not how much money you make, But howmuch money you save, how
+              hard it works for you, and how much invest you save
+            </p>
+          </div>
+
+          <button class="py-3 px-5 bg-acctColor1 text-white">
+            See All Features &rarr;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="target-sec faq mt-20 lg:px-20 px-5">
+      <div class="lg:flex">
+        <div class="lg:w-1/2">
+          <img src="./asset/Frame 30.svg" alt="" class="cont" />
+        </div>
+
+        <div class="lg:w-1/2 lg:mt-0 mt-20">
+          <div class="lg:ml-10">
+            <h2 class="lg:text-4xl text-2xl">Frequently Asked</h2>
+
+            <div class="mt-10">
+              <div class="lg:w-4/6 px-3">
+                <div class="flex">
+                  <img src="./asset/unsplash_WHWYBmtn3_0.png" alt="" />
+                  <div class="ml-5">
+                    <p class="text-lg">It’s Investment Halal?</p>
+                    <p class="text-sm mt-3">
+                      Investment together with manufacturing industry and expert
+                      are expected to be the pillarrs of countries economy
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-5 text-right text-xs text-acctColor2">
+                  Read More &rarr;
+                </p>
+              </div>
+
+              <div class="my-5 lg:w-4/6 px-3">
+                <div class="flex">
+                  <img src="./asset/unsplash_WHWYBmtn3_0.png" alt="" />
+                  <div class="ml-5">
+                    <p class="text-lg">It’s Investment Halal?</p>
+                    <p class="text-sm mt-3">
+                      Investment together with manufacturing industry and expert
+                      are expected to be the pillarrs of countries economy
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-5 text-right text-xs text-acctColor2">
+                  Read More &rarr;
+                </p>
+              </div>
+
+              <div class="lg:w-4/6 px-3">
+                <div class="flex">
+                  <img src="./asset/unsplash_WHWYBmtn3_0.png" alt="" />
+                  <div class="ml-5">
+                    <p class="text-lg">It’s Investment Halal?</p>
+                    <p class="text-sm mt-3">
+                      Investment together with manufacturing industry and expert
+                      are expected to be the pillarrs of countries economy
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-5 text-right text-xs text-acctColor2">
+                  Read More &rarr;
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:px-20 px-5 mt-36">
+      <div
+        class="cta bg-acctColor1 lg:h-40 flex flex-col justify-center items-center py-40"
+      >
+        <p class="lg:text-5xl text-3xl text-center text-white lg:w-1/2">
+          Join Now and Withdraw Your First Profit Investment
+        </p>
+        <button class="bg-white px-5 py-3 text-sm mt-10">
+          Get Started Now
+        </button>
+
+        <img src="./asset/Lines.svg" alt="lines" width="400px" class="img1" />
+      </div>
+    </section>
+
+    <footer class="bg-pryColor1 text-white lg:p-20 p-5 mt-40">
+      <div class="lg:flex justify-between grid grid-cols-2 gap-5">
+        <div>
+          <p class="text-lg">InvestEX</p>
+          <div class="flex items-center mt-8">
+            <a href="#"><img src="./asset/twitter.svg" alt="twitter" /></a>
+            <a href="#"
+              ><img src="./asset/facebook-fill.svg" alt="facebook"
+            /></a>
+          </div>
+        </div>
+
+        <div>
+          <p class="lg:text-lg text-sm">Information</p>
+          <ul class="text-xs mt-8 font-thin">
+            <li>Home</li>
+            <li class="my-5">About</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="lg:text-lg text-sm">Information</p>
+          <ul class="text-xs mt-8 font-thin">
+            <li>Start Investment</li>
+            <li class="my-5">Special Offers</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="lg:text-lg text-sm">Information</p>
+          <ul class="text-xs mt-8 font-thin">
+            <li class="my-5">+92 343 1279 488</li>
+            <li>investexd@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
